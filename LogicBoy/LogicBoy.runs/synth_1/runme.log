@@ -1,0 +1,1213 @@
+
+*** Running vivado
+    with args -log LogicBoy.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source LogicBoy.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source LogicBoy.tcl -notrace
+Command: synth_design -top LogicBoy -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 29043 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1702.449 ; gain = 151.715 ; free physical = 1607 ; free virtual = 6038
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'LogicBoy' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/LogicBoy.sv:13]
+	Parameter cpuEnabled bound to: 1 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'CPU' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:13]
+	Parameter LDA bound to: 5'b00110 
+	Parameter LDB bound to: 5'b00111 
+	Parameter LDC bound to: 5'b01000 
+	Parameter LDD bound to: 5'b01001 
+	Parameter LDV bound to: 5'b01010 
+	Parameter LDM bound to: 5'b01011 
+	Parameter WMLR bound to: 5'b01100 
+	Parameter WMLV bound to: 5'b01101 
+	Parameter WMLM bound to: 5'b01110 
+	Parameter JPV bound to: 5'b01111 
+	Parameter JPM bound to: 5'b10000 
+	Parameter JPVZ bound to: 5'b10001 
+	Parameter JPMZ bound to: 5'b10010 
+	Parameter ADD bound to: 5'b00001 
+	Parameter SUB bound to: 5'b00010 
+	Parameter INC bound to: 5'b00011 
+	Parameter DEC bound to: 5'b00100 
+	Parameter SET bound to: 5'b00101 
+	Parameter RST bound to: 5'b10011 
+	Parameter NOP bound to: 5'b00000 
+	Parameter HALT bound to: 5'b11111 
+	Parameter RET bound to: 5'b10100 
+	Parameter STACK_START bound to: 16'b1110100000000000 
+INFO: [Synth 8-6157] synthesizing module 'ArthmeticLogicUnit' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/ALU.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'ArthmeticLogicUnit' (1#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/ALU.sv:13]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:264]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:368]
+INFO: [Synth 8-226] default block is never used [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:401]
+INFO: [Synth 8-226] default block is never used [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:415]
+INFO: [Synth 8-226] default block is never used [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:429]
+INFO: [Synth 8-226] default block is never used [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:443]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:455]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:491]
+INFO: [Synth 8-226] default block is never used [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:574]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:546]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:591]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:640]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:708]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:762]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:283]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:249]
+WARNING: [Synth 8-6014] Unused sequential element cache_reg[5] was removed.  [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:192]
+WARNING: [Synth 8-6014] Unused sequential element cache_reg[6] was removed.  [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:192]
+WARNING: [Synth 8-6014] Unused sequential element cache_reg[7] was removed.  [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:192]
+WARNING: [Synth 8-87] always_comb on 'loadFlagRegister_reg' did not result in combinational logic [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:302]
+WARNING: [Synth 8-87] always_comb on 'inputFlagRegister_reg' did not result in combinational logic [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:303]
+INFO: [Synth 8-6155] done synthesizing module 'CPU' (2#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'MemoryMultiplexer' [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/MemoryMultiplexer.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'MemoryMultiplexer' (3#1) [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/MemoryMultiplexer.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'PixelProcessor' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/PixelProcesser.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'VideoRam' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/VideoRam.sv:13]
+	Parameter VRAM_START_ADDRESS bound to: 16'b1110100010100101 
+INFO: [Synth 8-6155] done synthesizing module 'VideoRam' (4#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/VideoRam.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'VramRender' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/VramRender.sv:13]
+	Parameter WINDOW_X_ADDR bound to: 16'b1110100010100101 
+	Parameter WINDOW_Y_ADDR bound to: 16'b1110100010100110 
+	Parameter SETTINGS_ADDR bound to: 16'b1110100010100111 
+INFO: [Synth 8-6157] synthesizing module 'CLRegister' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CLRegister.sv:13]
+	Parameter WID bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CLRegister' (5#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CLRegister.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'CCounter' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CCounter.sv:13]
+	Parameter WID bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CCounter' (6#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CCounter.sv:13]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/VramRender.sv:172]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/VramRender.sv:158]
+INFO: [Synth 8-6157] synthesizing module 'DrawTileMap' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawTileMap.sv:14]
+	Parameter VGA_X bound to: 160 - type: integer 
+	Parameter VGA_Y bound to: 120 - type: integer 
+	Parameter POINTER_TABLE_ADDR bound to: 16'b1110100010101000 
+	Parameter TILES_X bound to: 21 - type: integer 
+	Parameter TILES_Y bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'ShiftRegister' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/ShiftRegister.sv:13]
+	Parameter WID bound to: 8 - type: integer 
+	Parameter LEN bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'ShiftRegister' (7#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/ShiftRegister.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'mod_counter' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/mod_counter.sv:16]
+	Parameter MOD_VALUE bound to: 21 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mod_counter' (8#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/mod_counter.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'mod_counter__parameterized0' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/mod_counter.sv:16]
+	Parameter MOD_VALUE bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'mod_counter__parameterized0' (8#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/mod_counter.sv:16]
+INFO: [Synth 8-6157] synthesizing module 'CCounter__parameterized0' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CCounter.sv:13]
+	Parameter WID bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CCounter__parameterized0' (8#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CCounter.sv:13]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawTileMap.sv:203]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawTileMap.sv:234]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawTileMap.sv:185]
+INFO: [Synth 8-6155] done synthesizing module 'DrawTileMap' (9#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawTileMap.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'DrawWindowLayer' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawWindowLayer.sv:14]
+	Parameter POINTER_TABLE_ADDR bound to: 16'b1111000010101000 
+	Parameter TILES_X bound to: 20 - type: integer 
+	Parameter TILES_Y bound to: 15 - type: integer 
+	Parameter VGA_X bound to: 160 - type: integer 
+	Parameter VGA_Y bound to: 140 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawWindowLayer.sv:205]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawWindowLayer.sv:237]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawWindowLayer.sv:187]
+INFO: [Synth 8-6155] done synthesizing module 'DrawWindowLayer' (10#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawWindowLayer.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'DrawSprites' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawSprites.sv:14]
+	Parameter VGA_X bound to: 160 - type: integer 
+	Parameter VGA_Y bound to: 120 - type: integer 
+	Parameter POINTER_TABLE_ADDR bound to: 16'b1111001100000000 
+	Parameter MAX_SPRITES bound to: 256 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'CCounter__parameterized1' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CCounter.sv:13]
+	Parameter WID bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CCounter__parameterized1' (10#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CCounter.sv:13]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawSprites.sv:226]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawSprites.sv:293]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawSprites.sv:207]
+INFO: [Synth 8-6155] done synthesizing module 'DrawSprites' (11#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawSprites.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'DrawButtons' [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/DrawButtons.sv:13]
+	Parameter BUTTON_REGISTER_ADDRESS bound to: 16'b1111111111111111 
+	Parameter LOWER_SWITCH_REGISTER_ADDRESS bound to: 16'b1110100010100110 
+	Parameter HIGHER_SWITCH_REGISTER_ADDRESS bound to: 16'b1110100010100101 
+	Parameter VGA_X bound to: 160 - type: integer 
+	Parameter VGA_Y bound to: 140 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/DrawButtons.sv:115]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/DrawButtons.sv:96]
+INFO: [Synth 8-6155] done synthesizing module 'DrawButtons' (12#1) [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/DrawButtons.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'VramRender' (13#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/VramRender.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'BitmapToVga' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/BitmapToVga.sv:17]
+	Parameter V_PIXELS bound to: 10'b0111100000 
+	Parameter V_SYNC_START bound to: 493 - type: integer 
+	Parameter V_SYNC_END bound to: 494 - type: integer 
+	Parameter V_TOTAL bound to: 10'b1000001101 
+	Parameter H_PIXELS bound to: 10'b1010000000 
+	Parameter H_SYNC_START bound to: 659 - type: integer 
+	Parameter H_SYNC_END bound to: 754 - type: integer 
+	Parameter H_TOTAL bound to: 10'b1100100000 
+INFO: [Synth 8-6157] synthesizing module 'VgaRam' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/BitmapToVga.sv:164]
+INFO: [Synth 8-6155] done synthesizing module 'VgaRam' (14#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/BitmapToVga.sv:164]
+INFO: [Synth 8-6155] done synthesizing module 'BitmapToVga' (15#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/BitmapToVga.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'PixelProcessor' (16#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/PixelProcesser.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'GeneralRam' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/GeneralRam.sv:13]
+	Parameter GRAM_START_ADDRESS bound to: 16'b1100100000000000 
+	Parameter BANK_SIZE bound to: 16'b0001000000000000 
+INFO: [Synth 8-6155] done synthesizing module 'GeneralRam' (17#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/GeneralRam.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'ReadOnlyMemory' [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/ReadOnlyMemory.sv:3]
+	Parameter ROM_START_ADDRESS bound to: 16'b0000000000000000 
+	Parameter LDA bound to: 5'b00110 
+	Parameter LDB bound to: 5'b00111 
+	Parameter LDC bound to: 5'b01000 
+	Parameter LDD bound to: 5'b01001 
+	Parameter LDV bound to: 5'b01010 
+	Parameter LDM bound to: 5'b01011 
+	Parameter WMLR bound to: 5'b01100 
+	Parameter WMLV bound to: 5'b01101 
+	Parameter WMLM bound to: 5'b01110 
+	Parameter JPV bound to: 5'b01111 
+	Parameter JPM bound to: 5'b10000 
+	Parameter JPVZ bound to: 5'b10001 
+	Parameter JPMZ bound to: 5'b10010 
+	Parameter ADD bound to: 5'b00001 
+	Parameter SUB bound to: 5'b00010 
+	Parameter INC bound to: 5'b00011 
+	Parameter DEC bound to: 5'b00100 
+	Parameter SET bound to: 5'b00101 
+	Parameter RST bound to: 5'b10011 
+	Parameter NOP bound to: 5'b00000 
+	Parameter HALT bound to: 5'b11111 
+	Parameter RET bound to: 5'b10100 
+WARNING: [Synth 8-6014] Unused sequential element rd_addrReg_reg[1] was removed.  [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/ReadOnlyMemory.sv:60]
+INFO: [Synth 8-6155] done synthesizing module 'ReadOnlyMemory' (18#1) [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/ReadOnlyMemory.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'ppTestModule' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/ppTestModule.sv:13]
+	Parameter RAM_ADDR bound to: 16'b1100100000000000 
+	Parameter WINDOW_X_ADDR bound to: 16'b1110100010100101 
+	Parameter WINDOW_Y_ADDR bound to: 16'b1110100010100110 
+	Parameter SETTINGS_ADDR bound to: 16'b1110100010100111 
+	Parameter SETTINGS_VAL bound to: 8'b00000001 
+	Parameter TILE_POINTER_TABLE_ADDR bound to: 16'b1110100010101000 
+	Parameter WINDOW_POINTER_TABLE_ADDR bound to: 16'b1111000010101000 
+	Parameter SPRITE_POINTER_TABLE_ADDR bound to: 16'b1111001100000000 
+	Parameter SPRITE_DATA_ADDR bound to: 16'b1111100000000000 
+INFO: [Synth 8-6157] synthesizing module 'CCounter__parameterized2' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CCounter.sv:13]
+	Parameter WID bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CCounter__parameterized2' (18#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CCounter.sv:13]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/ppTestModule.sv:233]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/ppTestModule.sv:348]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/ppTestModule.sv:391]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/ppTestModule.sv:433]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/Game Boy HDL - Dec2/ppTestModule.sv:194]
+INFO: [Synth 8-6155] done synthesizing module 'ppTestModule' (19#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/ppTestModule.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'InputReader' [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/InputReader.sv:12]
+	Parameter WINDOW_X_ADDR bound to: 16'b1110100010100101 
+	Parameter WINDOW_Y_ADDR bound to: 16'b1110100010100110 
+	Parameter BUTTON_STATE_REG bound to: 16'b1111111111111111 
+	Parameter POINTER_TABLE_ADDR bound to: 16'b1110100010101000 
+	Parameter SPRITE_DATA_ADDR bound to: 16'b1111100000000000 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/InputReader.sv:84]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/InputReader.sv:111]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/InputReader.sv:72]
+INFO: [Synth 8-6155] done synthesizing module 'InputReader' (20#1) [/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/InputReader.sv:12]
+INFO: [Synth 8-6157] synthesizing module 'ButtonDebounce' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/ButtonDebouncer.sv:13]
+	Parameter INTERVAL bound to: 500000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'debounce' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/Debounce.sv:13]
+	Parameter INTERVAL bound to: 500000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'CCounter__parameterized3' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CCounter.sv:13]
+	Parameter WID bound to: 19 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'CCounter__parameterized3' (20#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CCounter.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (21#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/Debounce.sv:13]
+INFO: [Synth 8-6155] done synthesizing module 'ButtonDebounce' (22#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/ButtonDebouncer.sv:13]
+INFO: [Synth 8-6157] synthesizing module 'clk_generator' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/clk_generator.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (23#1) [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:32856]
+INFO: [Synth 8-6157] synthesizing module 'PLLE2_ADV' [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:61199]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT bound to: 9 - type: integer 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: float 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: float 
+	Parameter CLKOUT0_DIVIDE bound to: 9 - type: integer 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT1_DIVIDE bound to: 36 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: float 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: float 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: float 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: float 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: float 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'PLLE2_ADV' (24#1) [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:61199]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (25#1) [/tools/Xilinx/Vivado/2019.1/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_generator' (26#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/clk_generator.v:69]
+INFO: [Synth 8-6157] synthesizing module 'SevenSegmentControl' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/SevenSegmentControl.sv:12]
+	Parameter COUNT_BITS bound to: 17 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'SevenSegmentControl' (27#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/SevenSegmentControl.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'LogicBoy' (28#1) [/home/linuxpack/Vivado/Game Boy HDL - Dec2/LogicBoy.sv:13]
+WARNING: [Synth 8-3331] design VgaRam has unconnected port wr_addr[15]
+WARNING: [Synth 8-3331] design VgaRam has unconnected port rd_addr[15]
+WARNING: [Synth 8-3331] design VideoRam has unconnected port test_addr[15]
+WARNING: [Synth 8-3331] design VideoRam has unconnected port test_addr[14]
+WARNING: [Synth 8-3331] design VideoRam has unconnected port test_addr[13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1757.168 ; gain = 206.434 ; free physical = 1619 ; free virtual = 6050
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1769.043 ; gain = 218.309 ; free physical = 1616 ; free virtual = 6047
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 1769.043 ; gain = 218.309 ; free physical = 1616 ; free virtual = 6047
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Constraints/nexys4_220.xdc]
+Finished Parsing XDC File [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Constraints/nexys4_220.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Constraints/nexys4_220.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/LogicBoy_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/LogicBoy_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1922.621 ; gain = 0.000 ; free physical = 1521 ; free virtual = 5952
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1922.621 ; gain = 0.000 ; free physical = 1521 ; free virtual = 5952
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1922.621 ; gain = 371.887 ; free physical = 1601 ; free virtual = 6033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1922.621 ; gain = 371.887 ; free physical = 1601 ; free virtual = 6033
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1922.621 ; gain = 371.887 ; free physical = 1601 ; free virtual = 6033
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:177]
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'CPU'
+INFO: [Synth 8-5546] ROM "wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "loadCache" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "loadCache" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "loadCache" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "loadProgramCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "incProgramCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "incProgramCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "incProgramCounter" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'DrawTileMap'
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawSprites.sv:328]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawSprites.sv:334]
+INFO: [Synth 8-5546] ROM "loadPointerReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "loadPropReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "loadXYReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "incByteCount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'DrawButtons'
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'VramRender'
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'ppTestModule'
+INFO: [Synth 8-5546] ROM "clrCycleCount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "incByteCount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "wr_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "incCycleCount" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "done" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'InputReader'
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'cs_reg' in module 'debounce'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                               00 |                         00000000
+                   fetch |                               01 |                         00000001
+                 execute |                               10 |                         00000010
+                    halt |                               11 |                         00000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'CPU'
+WARNING: [Synth 8-327] inferring latch for variable 'loadFlagRegister_reg' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:302]
+WARNING: [Synth 8-327] inferring latch for variable 'inputFlagRegister_reg' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:303]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                              000 |                              000
+            getRegisters |                              001 |                              001
+             getTileLine |                              010 |                              010
+                drawTile |                              011 |                              011
+                finished |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'DrawTileMap'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                              000 |                              000
+            getRegisters |                              001 |                              001
+            drawSwitches |                              010 |                              010
+             drawButtons |                              011 |                              011
+                finished |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'DrawButtons'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                              000 |                              000
+            getRegisters |                              001 |                              001
+                 tilemap |                              010 |                              010
+             windowlayer |                              011 |                              011
+                 sprites |                              100 |                              100
+        drawButtonStates |                              101 |                              110
+    waitingForBufferSwap |                              110 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'VramRender'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                       0000000001 |                             0000
+              voidMemory |                       0000000010 |                             0001
+           writeSettings |                       0000000100 |                             0010
+         writeSpriteTile |                       0000001000 |                             0011
+       writeSpriteWindow |                       0000010000 |                             0100
+       writeSpritePlayer |                       0000100000 |                             0101
+       writeTilePointers |                       0001000000 |                             0110
+     writeWindowPointers |                       0010000000 |                             0111
+     writeSpritePointers |                       0100000000 |                             1000
+                finished |                       1000000000 |                             1001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'one-hot' in module 'ppTestModule'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    init |                               00 |                              000
+           writeSwitches |                               01 |                              001
+            writeButtons |                               10 |                              010
+                finished |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'InputReader'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                      s0 |                               00 |                               00
+                      s1 |                               01 |                               01
+                      s2 |                               10 |                               10
+                      s3 |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'cs_reg' using encoding 'sequential' in module 'debounce'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:26 . Memory (MB): peak = 1922.621 ; gain = 371.887 ; free physical = 1589 ; free virtual = 6022
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 13    
+	   3 Input     16 Bit       Adders := 2     
+	   2 Input     13 Bit       Adders := 3     
+	   2 Input     12 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 19    
+	   3 Input      8 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 4     
+	   2 Input      5 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 7     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 54    
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 3     
+	                3 Bit    Registers := 7     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	              64K Bit         RAMs := 2     
+	              32K Bit         RAMs := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	  10 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 17    
+	   8 Input     10 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 2     
+	  12 Input     10 Bit        Muxes := 1     
+	  23 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 40    
+	   4 Input      8 Bit        Muxes := 14    
+	   6 Input      8 Bit        Muxes := 6     
+	  10 Input      8 Bit        Muxes := 3     
+	   5 Input      8 Bit        Muxes := 4     
+	  12 Input      8 Bit        Muxes := 3     
+	   8 Input      8 Bit        Muxes := 5     
+	   7 Input      8 Bit        Muxes := 3     
+	  16 Input      8 Bit        Muxes := 2     
+	  16 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	  23 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 28    
+	  10 Input      3 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 2     
+	   6 Input      3 Bit        Muxes := 2     
+	  12 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	  23 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 10    
+	   2 Input      2 Bit        Muxes := 37    
+	   8 Input      2 Bit        Muxes := 2     
+	  10 Input      2 Bit        Muxes := 2     
+	  14 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 4     
+	   5 Input      2 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 75    
+	   4 Input      1 Bit        Muxes := 41    
+	   6 Input      1 Bit        Muxes := 23    
+	   8 Input      1 Bit        Muxes := 17    
+	  10 Input      1 Bit        Muxes := 13    
+	  14 Input      1 Bit        Muxes := 3     
+	  23 Input      1 Bit        Muxes := 2     
+	  28 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 18    
+	   7 Input      1 Bit        Muxes := 13    
+	  12 Input      1 Bit        Muxes := 6     
+	  11 Input      1 Bit        Muxes := 3     
+	  17 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module LogicBoy 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module ArthmeticLogicUnit 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+Module CPU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 11    
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	  23 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	   4 Input      8 Bit        Muxes := 10    
+	   6 Input      8 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 1     
+	  23 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 1     
+	  23 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   8 Input      2 Bit        Muxes := 2     
+	  10 Input      2 Bit        Muxes := 2     
+	  14 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 35    
+	   4 Input      1 Bit        Muxes := 29    
+	   6 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 7     
+	  10 Input      1 Bit        Muxes := 9     
+	  14 Input      1 Bit        Muxes := 3     
+	  23 Input      1 Bit        Muxes := 2     
+	  28 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 2     
+Module MemoryMultiplexer 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+Module VideoRam 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     13 Bit       Adders := 3     
++---Registers : 
+	                8 Bit    Registers := 6     
+Module CLRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+Module CCounter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module ShiftRegister 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
+Module mod_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
+Module mod_counter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+Module CCounter__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+Module DrawTileMap 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   4 Input      8 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 5     
+	   6 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 10    
+Module DrawWindowLayer 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 3     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 2     
+	   8 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 4     
+	   7 Input      1 Bit        Muxes := 1     
+Module CCounter__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+Module DrawSprites 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 2     
+	   4 Input      8 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	  12 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   6 Input      8 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	  12 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   6 Input      1 Bit        Muxes := 4     
+	  12 Input      1 Bit        Muxes := 3     
+	  11 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 1     
+	  17 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 1     
+Module DrawButtons 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 4     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 3     
++---Muxes : 
+	   5 Input      8 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   8 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 6     
+Module VramRender 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   7 Input      8 Bit        Muxes := 3     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 7     
+	   8 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   8 Input      1 Bit        Muxes := 3     
+	   7 Input      1 Bit        Muxes := 11    
+Module VgaRam 
+Detailed RTL Component Info : 
++---Registers : 
+	                2 Bit    Registers := 1     
++---RAMs : 
+	              64K Bit         RAMs := 1     
+Module BitmapToVga 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module GeneralRam 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 4     
++---RAMs : 
+	              32K Bit         RAMs := 1     
+Module ReadOnlyMemory 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	  16 Input      8 Bit        Muxes := 1     
+Module ppTestModule 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 5     
+	   2 Input      8 Bit       Adders := 2     
++---Muxes : 
+	  10 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 17    
+	   8 Input     10 Bit        Muxes := 1     
+	   4 Input     10 Bit        Muxes := 2     
+	  12 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 18    
+	   8 Input      8 Bit        Muxes := 2     
+	  16 Input      8 Bit        Muxes := 1     
+	   5 Input      8 Bit        Muxes := 1     
+	  12 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	  10 Input      8 Bit        Muxes := 2     
+	  16 Input      7 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 11    
+	   8 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 2     
+	  12 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 4     
+Module InputReader 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   6 Input      8 Bit        Muxes := 2     
+	   4 Input      8 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   6 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 5     
+Module debounce 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 1     
+Module SevenSegmentControl 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'Render_inst/DrawWindowLayer_inst/tileYCount_reg[3:0]' into 'Render_inst/DrawWindowLayer_inst/tileYCount_reg[3:0]' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawWindowLayer.sv:99]
+INFO: [Synth 8-4471] merging register 'Render_inst/DrawWindowLayer_inst/tileXCount_reg[4:0]' into 'Render_inst/DrawWindowLayer_inst/tileXCount_reg[4:0]' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawWindowLayer.sv:90]
+INFO: [Synth 8-5546] ROM "Render_inst/DrawTileMap_inst/ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Render_inst/DrawTileMap_inst/ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ns" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'GeneralRam_inst/rd_addrReg_reg[0][7:0]' into 'GeneralRam_inst/wr_addrReg_reg[0][7:0]' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/GeneralRam.sv:30]
+INFO: [Synth 8-4471] merging register 'GeneralRam_inst/rd_addrReg_reg[1][7:0]' into 'GeneralRam_inst/wr_addrReg_reg[1][7:0]' [/home/linuxpack/Vivado/Game Boy HDL - Dec2/GeneralRam.sv:30]
+WARNING: [Synth 8-3331] design PixelProcessor has unconnected port test_addr[15]
+WARNING: [Synth 8-3331] design PixelProcessor has unconnected port test_addr[14]
+WARNING: [Synth 8-3331] design PixelProcessor has unconnected port test_addr[13]
+INFO: [Synth 8-3886] merging instance 'ROM_inst/rd_addrReg_reg[0][4]' (FDR) to 'GeneralRam_inst/wr_addrReg_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[0][4]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'ROM_inst/rd_addrReg_reg[0][5]' (FDR) to 'GeneralRam_inst/wr_addrReg_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[0][5]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'ROM_inst/rd_addrReg_reg[0][6]' (FDR) to 'GeneralRam_inst/wr_addrReg_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[0][6]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'ROM_inst/rd_addrReg_reg[0][7]' (FDR) to 'GeneralRam_inst/wr_addrReg_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[0][7]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[0][0]' (FDR) to 'ROM_inst/rd_addrReg_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[0][1]' (FDR) to 'ROM_inst/rd_addrReg_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[0][2]' (FDR) to 'ROM_inst/rd_addrReg_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[0][3]' (FDR) to 'ROM_inst/rd_addrReg_reg[0][3]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\CPU_inst/loadFlagRegister_reg )
+INFO: [Synth 8-3886] merging instance 'ROM_inst/rd_addrReg_reg[0][2]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'ROM_inst/rd_addrReg_reg[0][1]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'ROM_inst/rd_addrReg_reg[0][0]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'ROM_inst/rd_addrReg_reg[0][3]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[1][0]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[1][1]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[1][2]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[1][3]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][0]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][1]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][2]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][3]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][4]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][5]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][6]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[0][7]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[1][0]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[1][1]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[1][2]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[1][3]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[1][4]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[1][4]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'MM_inst/addressRegister_reg[0][1]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][1]'
+INFO: [Synth 8-3886] merging instance 'MM_inst/addressRegister_reg[0][0]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'MM_inst/addressRegister_reg[0][2]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][2]'
+INFO: [Synth 8-3886] merging instance 'MM_inst/addressRegister_reg[0][3]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'MM_inst/addressRegister_reg[0][4]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][4]'
+INFO: [Synth 8-3886] merging instance 'MM_inst/addressRegister_reg[0][5]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][5]'
+INFO: [Synth 8-3886] merging instance 'MM_inst/addressRegister_reg[0][6]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][6]'
+INFO: [Synth 8-3886] merging instance 'MM_inst/addressRegister_reg[0][7]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[0][7]'
+INFO: [Synth 8-3886] merging instance 'MM_inst/addressRegister_reg[1][0]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'MM_inst/addressRegister_reg[1][1]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[1][1]'
+INFO: [Synth 8-3886] merging instance 'MM_inst/addressRegister_reg[1][2]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[1][2]'
+INFO: [Synth 8-3886] merging instance 'MM_inst/addressRegister_reg[1][3]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[1][3]'
+INFO: [Synth 8-3886] merging instance 'MM_inst/addressRegister_reg[1][4]' (FDR) to 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[1][4]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[1][5]' (FDR) to 'MM_inst/addressRegister_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[1][5]' (FDR) to 'MM_inst/addressRegister_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[1][5]' (FDR) to 'MM_inst/addressRegister_reg[1][5]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[1][6]' (FDR) to 'MM_inst/addressRegister_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[1][6]' (FDR) to 'MM_inst/addressRegister_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[1][6]' (FDR) to 'MM_inst/addressRegister_reg[1][6]'
+INFO: [Synth 8-3886] merging instance 'GeneralRam_inst/wr_addrReg_reg[1][7]' (FDR) to 'MM_inst/addressRegister_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/rdAddrReg2_reg[1][7]' (FDR) to 'MM_inst/addressRegister_reg[1][7]'
+INFO: [Synth 8-3886] merging instance 'PixelProcessor_inst/VideoRam_inst/wrAddrReg_reg[1][7]' (FDR) to 'MM_inst/addressRegister_reg[1][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PixelProcessor_inst/Render_inst/DrawSprites_inst/cs_reg[3] )
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/loadFlagRegister_reg) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/inputFlagRegister_reg[7]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/inputFlagRegister_reg[6]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/inputFlagRegister_reg[5]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/inputFlagRegister_reg[4]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/inputFlagRegister_reg[3]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/inputFlagRegister_reg[2]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (CPU_inst/inputFlagRegister_reg[1]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (InputReader_inst/FSM_sequential_cs_reg[1]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (InputReader_inst/FSM_sequential_cs_reg[0]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (ButtonDebounce_inst/center/FSM_sequential_cs_reg[1]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (ButtonDebounce_inst/center/FSM_sequential_cs_reg[0]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (ButtonDebounce_inst/up/FSM_sequential_cs_reg[1]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (ButtonDebounce_inst/up/FSM_sequential_cs_reg[0]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (ButtonDebounce_inst/down/FSM_sequential_cs_reg[1]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (ButtonDebounce_inst/down/FSM_sequential_cs_reg[0]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (ButtonDebounce_inst/right/FSM_sequential_cs_reg[1]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (ButtonDebounce_inst/right/FSM_sequential_cs_reg[0]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (ButtonDebounce_inst/left/FSM_sequential_cs_reg[1]) is unused and will be removed from module LogicBoy.
+WARNING: [Synth 8-3332] Sequential element (ButtonDebounce_inst/left/FSM_sequential_cs_reg[0]) is unused and will be removed from module LogicBoy.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:47 . Memory (MB): peak = 1922.621 ; gain = 371.887 ; free physical = 1549 ; free virtual = 5986
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------------+---------------+----------------+
+|Module Name | RTL Object       | Depth x Width | Implemented As | 
++------------+------------------+---------------+----------------+
+|CPU         | loadFlagRegister | 32x1          | LUT            | 
+|CPU         | incMicroCount    | 32x1          | LUT            | 
+|CPU         | loadFlagRegister | 32x1          | LUT            | 
+|CPU         | incMicroCount    | 32x1          | LUT            | 
++------------+------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping  Report (see note below)
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|VgaRam:     | ram_reg    | 32 K x 2(NO_CHANGE)    | W |   | 32 K x 2(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
+|VgaRam:     | ram_reg    | 32 K x 2(NO_CHANGE)    | W |   | 32 K x 2(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++------------+--------------------------------------------+-----------+----------------------+--------------------------------+
+|Module Name | RTL Object                                 | Inference | Size (Depth x Width) | Primitives                     | 
++------------+--------------------------------------------+-----------+----------------------+--------------------------------+
+|LogicBoy    | PixelProcessor_inst/VideoRam_inst/vram_reg | Implied   | 8 K x 8              | RAM64X1D x 564  RAM64M x 564   | 
+|LogicBoy    | GeneralRam_inst/ram_reg                    | Implied   | 4 K x 8              | RAM256X1S x 128                | 
++------------+--------------------------------------------+-----------+----------------------+--------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance i_14/PixelProcessor_inst/BitVGA_inst/bufferA/ram_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_14/PixelProcessor_inst/BitVGA_inst/bufferA/ram_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_15/PixelProcessor_inst/BitVGA_inst/bufferB/ram_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance i_15/PixelProcessor_inst/BitVGA_inst/bufferB/ram_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:51 ; elapsed = 00:00:57 . Memory (MB): peak = 1922.621 ; gain = 371.887 ; free physical = 1431 ; free virtual = 5869
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:10 . Memory (MB): peak = 1976.012 ; gain = 425.277 ; free physical = 1383 ; free virtual = 5820
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping  Report
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|VgaRam:     | ram_reg    | 32 K x 2(NO_CHANGE)    | W |   | 32 K x 2(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
+|VgaRam:     | ram_reg    | 32 K x 2(NO_CHANGE)    | W |   | 32 K x 2(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
++------------+------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping  Report
++------------+--------------------------------------------+-----------+----------------------+--------------------------------+
+|Module Name | RTL Object                                 | Inference | Size (Depth x Width) | Primitives                     | 
++------------+--------------------------------------------+-----------+----------------------+--------------------------------+
+|LogicBoy    | PixelProcessor_inst/VideoRam_inst/vram_reg | Implied   | 8 K x 8              | RAM64X1D x 564  RAM64M x 564   | 
+|LogicBoy    | GeneralRam_inst/ram_reg                    | Implied   | 4 K x 8              | RAM256X1S x 128                | 
++------------+--------------------------------------------+-----------+----------------------+--------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4765] Removing register instance (\CPU_inst/registerD_reg[7]__0 ) from module (LogicBoy) as it is equivalent to (\CPU_inst/registerD_reg[7] ) and driving same net [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:134]
+INFO: [Synth 8-4765] Removing register instance (\CPU_inst/registerD_reg[6]__0 ) from module (LogicBoy) as it is equivalent to (\CPU_inst/registerD_reg[6] ) and driving same net [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:134]
+INFO: [Synth 8-4765] Removing register instance (\CPU_inst/registerD_reg[5]__0 ) from module (LogicBoy) as it is equivalent to (\CPU_inst/registerD_reg[5] ) and driving same net [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:134]
+INFO: [Synth 8-4765] Removing register instance (\CPU_inst/registerD_reg[4]__0 ) from module (LogicBoy) as it is equivalent to (\CPU_inst/registerD_reg[4] ) and driving same net [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:134]
+INFO: [Synth 8-4765] Removing register instance (\CPU_inst/registerD_reg[3]__0 ) from module (LogicBoy) as it is equivalent to (\CPU_inst/registerD_reg[3] ) and driving same net [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:134]
+INFO: [Synth 8-4765] Removing register instance (\CPU_inst/registerD_reg[2]__0 ) from module (LogicBoy) as it is equivalent to (\CPU_inst/registerD_reg[2] ) and driving same net [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:134]
+INFO: [Synth 8-4765] Removing register instance (\CPU_inst/registerD_reg[1]__0 ) from module (LogicBoy) as it is equivalent to (\CPU_inst/registerD_reg[1] ) and driving same net [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:134]
+INFO: [Synth 8-4765] Removing register instance (\CPU_inst/registerD_reg[0]__0 ) from module (LogicBoy) as it is equivalent to (\CPU_inst/registerD_reg[0] ) and driving same net [/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv:134]
+INFO: [Synth 8-6837] The timing for the instance PixelProcessor_inst/BitVGA_inst/bufferA/ram_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance PixelProcessor_inst/BitVGA_inst/bufferA/ram_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance PixelProcessor_inst/BitVGA_inst/bufferB/ram_reg_0_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance PixelProcessor_inst/BitVGA_inst/bufferB/ram_reg_0_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:01:15 . Memory (MB): peak = 1976.012 ; gain = 425.277 ; free physical = 1379 ; free virtual = 5817
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:18 . Memory (MB): peak = 1976.012 ; gain = 425.277 ; free physical = 1378 ; free virtual = 5815
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 1976.012 ; gain = 425.277 ; free physical = 1378 ; free virtual = 5815
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1976.012 ; gain = 425.277 ; free physical = 1378 ; free virtual = 5815
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1976.012 ; gain = 425.277 ; free physical = 1378 ; free virtual = 5815
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1976.012 ; gain = 425.277 ; free physical = 1378 ; free virtual = 5815
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1976.012 ; gain = 425.277 ; free physical = 1378 ; free virtual = 5815
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     3|
+|2     |CARRY4    |   100|
+|3     |LUT1      |   134|
+|4     |LUT2      |   205|
+|5     |LUT3      |   124|
+|6     |LUT4      |   167|
+|7     |LUT5      |   223|
+|8     |LUT6      |  1281|
+|9     |MUXF7     |   332|
+|10    |MUXF8     |   129|
+|11    |PLLE2_ADV |     1|
+|12    |RAM256X1S |   128|
+|13    |RAM64M    |   564|
+|14    |RAM64X1D  |   564|
+|15    |RAMB36E1  |     4|
+|16    |FDRE      |   515|
+|17    |FDSE      |     5|
+|18    |LD        |     1|
+|19    |IBUF      |    18|
+|20    |OBUF      |    46|
++------+----------+------+
+
+Report Instance Areas: 
++------+---------------------------------+----------------------------+------+
+|      |Instance                         |Module                      |Cells |
++------+---------------------------------+----------------------------+------+
+|1     |top                              |                            |  4544|
+|2     |  GeneralRam_inst                |GeneralRam                  |   184|
+|3     |  CPU_inst                       |CPU                         |   572|
+|4     |    ALU                          |ArthmeticLogicUnit          |    59|
+|5     |  MM_inst                        |MemoryMultiplexer           |     5|
+|6     |  PixelProcessor_inst            |PixelProcessor              |  3417|
+|7     |    BitVGA_inst                  |BitmapToVga                 |    63|
+|8     |      bufferA                    |VgaRam                      |     4|
+|9     |      bufferB                    |VgaRam_22                   |     3|
+|10    |    Render_inst                  |VramRender                  |   893|
+|11    |      DrawButtons_inst           |DrawButtons                 |   107|
+|12    |        cycleCounter             |CCounter_21                 |    73|
+|13    |      DrawSprites_inst           |DrawSprites                 |   270|
+|14    |        bitCounter               |CCounter__parameterized0_13 |     8|
+|15    |        byteCounter              |CCounter_14                 |    29|
+|16    |        colorRegisterModule      |ShiftRegister_15            |    23|
+|17    |        cycleCounter             |CCounter_16                 |    73|
+|18    |        lineCounter              |CCounter__parameterized0_17 |     9|
+|19    |        pointerRegisterModule    |ShiftRegister_18            |    24|
+|20    |        propertiesRegisterModule |CLRegister_19               |     4|
+|21    |        spriteCounter            |CCounter__parameterized1    |    22|
+|22    |        xyRegisterModule         |ShiftRegister_20            |    41|
+|23    |      DrawTileMap_inst           |DrawTileMap                 |   222|
+|24    |        bitCounter               |CCounter__parameterized0_7  |    12|
+|25    |        byteCounter              |CCounter_8                  |    34|
+|26    |        colorRegisterModule      |ShiftRegister_9             |    22|
+|27    |        cycleCounter             |CCounter_10                 |    59|
+|28    |        lineCounter              |CCounter__parameterized0_11 |    13|
+|29    |        pointerRegisterModule    |ShiftRegister_12            |    20|
+|30    |        tileX                    |mod_counter                 |    18|
+|31    |        tileY                    |mod_counter__parameterized0 |    17|
+|32    |      DrawWindowLayer_inst       |DrawWindowLayer             |   210|
+|33    |        bitCounter               |CCounter__parameterized0    |    10|
+|34    |        byteCounter              |CCounter_3                  |    33|
+|35    |        colorRegisterModule      |ShiftRegister               |    21|
+|36    |        cycleCounter             |CCounter_4                  |    52|
+|37    |        lineCounter              |CCounter__parameterized0_5  |    14|
+|38    |        pointerRegisterModule    |ShiftRegister_6             |    29|
+|39    |      cyclesCounter              |CCounter                    |    29|
+|40    |      settingsRegister           |CLRegister                  |     3|
+|41    |      windowXOffsetRegister      |CLRegister_1                |    22|
+|42    |      windowYOffsetRegister      |CLRegister_2                |    23|
+|43    |    VideoRam_inst                |VideoRam                    |  2461|
+|44    |  clk_generator_inst             |clk_generator               |     5|
+|45    |  ppTestModule_inst              |ppTestModule                |   254|
+|46    |    byteCounter                  |CCounter__parameterized2    |   122|
+|47    |    cycleCounter                 |CCounter__parameterized2_0  |   106|
+|48    |  ssc_inst                       |SevenSegmentControl         |    44|
++------+---------------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1976.012 ; gain = 425.277 ; free physical = 1378 ; free virtual = 5815
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 25 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:10 ; elapsed = 00:01:15 . Memory (MB): peak = 1976.012 ; gain = 271.699 ; free physical = 1432 ; free virtual = 5870
+Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 1976.020 ; gain = 425.277 ; free physical = 1432 ; free virtual = 5870
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1823 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1978.980 ; gain = 0.000 ; free physical = 1373 ; free virtual = 5811
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1257 instances were transformed.
+  LD => LDCE: 1 instances
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 128 instances
+  RAM64M => RAM64M (RAMD64E, RAMD64E, RAMD64E, RAMD64E): 564 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 564 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+250 Infos, 36 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:30 . Memory (MB): peak = 1978.980 ; gain = 534.656 ; free physical = 1505 ; free virtual = 5943
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 1978.980 ; gain = 0.000 ; free physical = 1505 ; free virtual = 5943
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/linuxpack/Vivado/LogicBoy/LogicBoy.runs/synth_1/LogicBoy.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file LogicBoy_utilization_synth.rpt -pb LogicBoy_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 26 23:28:15 2020...

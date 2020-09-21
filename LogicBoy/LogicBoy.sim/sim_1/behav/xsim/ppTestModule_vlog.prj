@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../Game Boy HDL - Dec2/General Modules/CCounter.sv" \
+"../../../../../Game Boy HDL - Dec2/ppTestModule.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,50 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto 87f7a14d83ae4b6f801a61a53c903829 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot LogicBoy_behav xil_defaultlib.LogicBoy xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4100] "/home/linuxpack/Vivado/Game Boy HDL - Dec2/clk_generator.v" Line 69. Module clk_generator has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2019.1/continuous/2019_05_24_2552052/data/verilog/src/unisims/IBUF.v" Line 29. Module IBUF has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2019.1/continuous/2019_05_24_2552052/data/verilog/src/unisims/PLLE2_ADV.v" Line 49. Module PLLE2_ADV(CLKFBOUT_MULT=9,CLKIN1_PERIOD=10.0,CLKOUT0_DIVIDE=9,CLKOUT1_DIVIDE=36) has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2019.1/continuous/2019_05_24_2552052/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2019.1/continuous/2019_05_24_2552052/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/wrk/2019.1/continuous/2019_05_24_2552052/data/verilog/src/unisims/BUFG.v" Line 27. Module BUFG has a timescale but at least one module in design doesn't have timescale.
+WARNING: [XSIM 43-4100] "/home/linuxpack/Vivado/LogicBoy/LogicBoy.sim/sim_1/behav/xsim/glbl.v" Line 6. Module glbl has a timescale but at least one module in design doesn't have timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ArthmeticLogicUnit
+Compiling module xil_defaultlib.CPU
+Compiling module xil_defaultlib.MemoryMultiplexer
+Compiling module xil_defaultlib.VideoRam(VRAM_START_ADDRESS=16'b...
+Compiling module xil_defaultlib.CLRegister
+Compiling module xil_defaultlib.CCounter
+Compiling module xil_defaultlib.ShiftRegister
+Compiling module xil_defaultlib.mod_counter(MOD_VALUE=21)
+Compiling module xil_defaultlib.mod_counter(MOD_VALUE=16)
+Compiling module xil_defaultlib.CCounter(WID=3)
+Compiling module xil_defaultlib.DrawTileMap
+Compiling module xil_defaultlib.DrawWindowLayer
+Compiling module xil_defaultlib.DrawSprites
+Compiling module xil_defaultlib.DrawButtons
+Compiling module xil_defaultlib.VramRender
+Compiling module xil_defaultlib.VgaRam
+Compiling module xil_defaultlib.BitmapToVga_default
+Compiling module xil_defaultlib.PixelProcessor
+Compiling module xil_defaultlib.GeneralRam(GRAM_START_ADDRESS=16...
+Compiling module xil_defaultlib.ReadOnlyMemory(ROM_START_ADDRESS...
+Compiling module xil_defaultlib.CCounter(WID=16)
+Compiling module xil_defaultlib.ppTestModule
+Compiling module xil_defaultlib.InputReader
+Compiling module xil_defaultlib.CCounter(WID=19)
+Compiling module xil_defaultlib.debounce
+Compiling module xil_defaultlib.ButtonDebounce
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.PLLE2_ADV(CLKFBOUT_MULT=9,CLKIN1...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.clk_generator
+Compiling module xil_defaultlib.SevenSegmentControl
+Compiling module xil_defaultlib.LogicBoy
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot LogicBoy_behav

@@ -1,0 +1,47 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/ALU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ArthmeticLogicUnit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/BitmapToVga.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BitmapToVga
+INFO: [VRFC 10-311] analyzing module VgaRam
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/ButtonDebouncer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ButtonDebounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CCounter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CCounter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/CLRegister.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLRegister
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/CPU.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CPU
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/Debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/DrawButtons.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DrawButtons
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawSprites.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DrawSprites
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawTileMap.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DrawTileMap
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/DrawWindowLayer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DrawWindowLayer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/GeneralRam.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module GeneralRam
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/InputReader.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module InputReader
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/MemoryMultiplexer.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module MemoryMultiplexer
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/PixelProcesser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PixelProcessor
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/LogicBoy/LogicBoy.srcs/sources_1/new/ReadOnlyMemory.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ReadOnlyMemory
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/SevenSegmentControl.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SevenSegmentControl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/ShiftRegister.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ShiftRegister
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/VideoRam.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VideoRam
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/Graphics/VramRender.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VramRender
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/General Modules/mod_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mod_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/ppTestModule.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ppTestModule
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/linuxpack/Vivado/Game Boy HDL - Dec2/LogicBoy.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module LogicBoy

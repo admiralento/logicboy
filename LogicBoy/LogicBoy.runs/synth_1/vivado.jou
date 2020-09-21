@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue May 26 23:26:28 2020
+# Process ID: 29011
+# Current directory: /home/linuxpack/Vivado/LogicBoy/LogicBoy.runs/synth_1
+# Command line: vivado -log LogicBoy.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source LogicBoy.tcl
+# Log file: /home/linuxpack/Vivado/LogicBoy/LogicBoy.runs/synth_1/LogicBoy.vds
+# Journal file: /home/linuxpack/Vivado/LogicBoy/LogicBoy.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source LogicBoy.tcl -notrace
